@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+
+:root {
+  --color-void: #0F0F0F;
+  --color-coffee: #2F2315;
+  --color-amber: #F6B446;
+  --color-amber-muted: #D49A45;
+}
+
+html {
+  background-color: #2F2315;
+  color: #E8E1D6;
+}
