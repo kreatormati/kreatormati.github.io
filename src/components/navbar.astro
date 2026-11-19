@@ -3,7 +3,13 @@ import Layout from "../layouts/layout.astro";
 const homeTitle = ">_m";
 ---
 
-<nav class="flex p-5 ">
+<nav class="flex p-5 items-end justify-between text-base">
   <h1 class:"fl">{homeTitle}</h1>
+  <ul class="flex">
+    <li><a href="/">Home</a></li>
+    <li><a href="/Github"></a>Github</li>
+    <li><a href="/About">About</a></li>
+    <li><a href="/Contact">Contact</a></li>
+  </ul>
 </nav>
 
