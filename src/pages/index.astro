@@ -1,21 +1,20 @@
 ---
 import Layout from "../layouts/layout.astro";
+import BlogLink from "../components/bloglink.astro";
 const homeTitle = ">_m";
-const allPosts = Object.values(import.meta.glob('../content/posts/*.md', { eager: true }));
-import mdpost from  "../layouts/mdpost.astro";
+const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 ---
 
 <Layout title={homeTitle}>
-  <div>
   <ul>
-    {allPosts.map((post: any) => <mdpost url={post.url} title={post.frontmatter.title} />)}
-  </ul>
-<ul>
   {allPosts.map((post: any) => (
     <li>
       <a href={post.url}>{post.frontmatter.title}</a>
     </li>
-  ))}
-</ul>
-  </div>
+    ))}
+    <hr>
+  </ul>
+    <ul>
+    {allPosts.map((post: any) => <BlogLink url={post.url} title={post.frontmatter.title} />)}
+  </ul>
 </Layout>
