@@ -1,5 +1,11 @@
 @import url("/fonts/inter/inter.css");
 @import "tailwindcss";
+@font-face {
+  font-family: "Symbols Nerd Font";
+  src: url("/fonts/SymbolsNerdFont/SymbolsNerdFont-Regular.ttf")
+       format("truetype");
+  font-weight: normal;
+}
 
 
 :root {
@@ -8,11 +14,16 @@
   --color-amber: #F6B446;
   --color-amber-muted: #D49A45;
 
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif
 }
 
 html {
   background-color: #2F2315;
   color: #E8E1D6;
   padding : 40px;
+}
+
+.icon {
+  font-family:"Symbols Nerd Font";
+  padding: 10px;
 }

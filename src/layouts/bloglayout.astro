@@ -4,7 +4,9 @@ import Layout from "../layouts/layout.astro";
 ---
 <Layout title={frontmatter.title}>
 <meta charset="utf-8" />
-<h1>{frontmatter.title}</h1>
-<p>Written by {frontmatter.author}</p>
-<slot />
+<h1 class="text-5xl p-10">{frontmatter.title}</h1>
+<hr>
+<div style="padding: 5% 15%;">
+  <slot /> 
+</div>
 </Layout>
