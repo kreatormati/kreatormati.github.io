@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Navbar from "../components/navbar.astro";
+import MobileNavbar from "../components/mobile-navbar.astro"
 const mainTitle = "kreatormati";
 const title = Astro.props
 ---
@@ -11,6 +12,7 @@ const title = Astro.props
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{title} | {mainTitle}</title>
     <Navbar/>
+    <MobileNavbar/>
   </head>
   <body>
     <div>

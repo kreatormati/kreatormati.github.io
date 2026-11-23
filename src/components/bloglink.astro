@@ -5,15 +5,19 @@ const { title, url, time} = Astro.props;
 
   li {
     padding: 10px;
-    background-color: #000000;
+    background-color: var(--color-void);
+  }
+
+  ul {
+    padding: 1px 1px;
   }
 </style>
-
-  <li>
+  <ul>
+      <li>
     <a href={url}>{title}</a>
 
     <a href="">{time}</a>
-
   </li>
 
+  </ul>
 

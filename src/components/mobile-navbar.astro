@@ -2,14 +2,43 @@
 import Layout from "../layouts/layout.astro";
 const homeTitle = ">_m";
 ---
+<style>
+  .menu {
+    position: relative;
+  }
 
-<nav class="flex p-5 items-end justify-between text-2xl">
-  <h1 href="/" style="color: #D49A45; font-style: "InterDisplay"; font-weight: 600;">{homeTitle}</h1>
-  <ul class="flex space-x-4">
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    display: none;
+    right: 0;
+    min-width: 150px;
+    background:#2F2315;
+    padding: 10px;
+  }
+
+  .menu:hover .dropdown {
+    display: block;
+  }
+
+  @media (max-width:600px) {
+    .menu .icon {
+      display: content;
+    }
+  }
+  
+</style>
+<nav class="mobile">
+  <h1 style="color: #D49A45; font-style: "InterDisplay"; font-weight: 600; "> <a href="/">{homeTitle}</a></h1>
+  <div class="mobile menu">
+    <button class=" menu icon">󰍜</button>
+    <ul class="dropdown">
     <li><a href="/">Home</a></li>
     <li><a href=""></a>Github<span class="icon">󰏌</span></li>
     <li><a href="/about">About</a></li>
     <li><a href="/contact">Contact</a></li>
-  </ul>
+    </ul>
+      
+    </div>
 </nav>
 
