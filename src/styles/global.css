@@ -23,7 +23,26 @@ html {
   padding : 40px;
 }
 
+.desktop {
+  display: flex;
+  gap: 6rem;
+}
+
 .icon {
   font-family:"Symbols Nerd Font";
   padding: 10px;
+}
+
+body div {
+  padding:5% 25%;
+}
+
+@media (max-width:600px) {
+  body div {
+    padding:5%;
+  }
+  
+  .desktop {
+    display: none;
+  }
 }
