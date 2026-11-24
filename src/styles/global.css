@@ -43,6 +43,82 @@ body div {
   padding:5% 25%;
 }
 
+/*TEXT*/
+
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+
+}
+
+a {
+
+}
+
+blockquote {
+
+}
+
+code {
+
+}
+
+pre {
+
+}
+
+ul {
+
+}
+
+ol {
+
+}
+
+li {
+
+}
+
+strong {
+
+}
+
+em {
+
+}
+
+small {
+
+}
+
+hr {
+
+}
+
+
 @media (min-width:600px) {
   .desktop {
   display: flex;
@@ -53,8 +129,12 @@ body div {
   }
 }
 @media (max-width:600px) {
+
+  html {
+    padding: 20px
+  }
   body div {
-    padding:3%;
+    padding: 0rem;
   }
   
   .desktop {
