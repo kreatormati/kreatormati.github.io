@@ -75,7 +75,8 @@ p {
 }
 
 a {
-
+  font-style: underline;
+  color : --var(--color-amber-muted);
 }
 
 blockquote {
