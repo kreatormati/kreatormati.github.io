@@ -138,7 +138,7 @@ hr {
   html {
     padding: 20px
   }
-  body div {
+  .bodydiv {
     padding: 0rem;
   }
   
