@@ -134,8 +134,12 @@ hr {
 }
 @media (max-width:600px) {
 
-
-  
+  html {
+    padding: 20px;
+  }
+  .bodydiv {
+    padding: 0rem;
+  }
   .mobile-content {
     padding: 5%;
   }
