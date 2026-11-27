@@ -10,7 +10,8 @@ const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true })
   <div>
 
     <Intro/>
-   <h2 class="text-2xl p-2">Content Log:</h2> 
+    
+   <h2 class="text-2xl p-4">Content Log:</h2> 
   </div>
     <ul>
     {allPosts.map((post: any) => <BlogLink url={post.url} title={post.frontmatter.title} />)}

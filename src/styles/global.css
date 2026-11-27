@@ -10,7 +10,7 @@
 
 :root {
   --color-void: #0F0F0F;
-  --color-coffee: #2F2315;
+  --color-coffee: #221F22;
   --color-amber: #F6B446;
   --color-amber-muted: #D49A45;
 
@@ -18,7 +18,7 @@
 }
 
 html {
-  background-color: #2F2315;
+  background-color: #19181A;
   color: #E8E1D6;
   padding : 40px;
 }
@@ -127,7 +127,6 @@ hr {
 @media (min-width:600px) {
   .desktop {
   display: flex;
-  gap: 1rem;
   }
   .mobile {
     display: none;
@@ -135,11 +134,10 @@ hr {
 }
 @media (max-width:600px) {
 
-  html {
-    padding: 20px
-  }
-  body div {
-    padding: 0rem;
+
+  
+  .mobile-content {
+    padding: 5%;
   }
   
   .desktop {

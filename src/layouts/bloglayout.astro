@@ -3,10 +3,12 @@ const { frontmatter } = Astro.props;
 import Layout from "../layouts/layout.astro";
 ---
 <Layout title={frontmatter.title}>
-<meta charset="utf-8" />
-<h1 class="text-5xl p-10">{frontmatter.title}</h1>
-<hr>
-<div style="padding: 5%;">
-  <slot /> 
+<div class="bodydiv">
+    <h1 class="text-5xl p-10">{frontmatter.title}</h1>
+    <hr>
+    <img src={frontmatter.img} alt="">
+    <div class="mobile-content">
+      <slot /> 
+    </div>
 </div>
 </Layout>
