@@ -1,12 +1,12 @@
 ---
-const { title, url, time} = Astro.props;
+const { title, url, pubDate, tags} = Astro.props;
+import { defineCollection } from 'astro:content';
 ---
 <style>
 
   li {
     padding: 10px;
-    background-color: var(--color-void);
-    list-style-type: none;
+    list-style-type: square;
   }
 
   ul {
@@ -18,8 +18,8 @@ const { title, url, time} = Astro.props;
   <ul>
       <li>
     <a href={url}>{title}</a>
-
-    <a href="">{time}</a>
+    <p>{tags}</p>
+    <a href="">{pubDate}</a>
   </li>
 
   </ul>
